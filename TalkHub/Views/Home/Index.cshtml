@@ -2,7 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="auth-card">
+
+<h2>Вход</h2>
+<form id="auth-form" class="auth-form">
+    <input id="login" name="login" type="text" placeholder="Логин или почта" />
+    <input id="password" name="password" type="password" placeholder="Пароль" />
+    <span id="error-message"></span>
+    <button type="submit">Войти</button>
+</form>
 </div>

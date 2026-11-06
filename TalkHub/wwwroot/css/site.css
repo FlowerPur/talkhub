@@ -29,3 +29,28 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.auth-card {
+    width: 350px;
+    margin: 80px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #2b2b2b;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 10px;
+}
