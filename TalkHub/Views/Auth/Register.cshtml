@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="~/css/register.css" />
 }
 
-<div>
+<div class="auth-card">
     <h2>Регистрация</h2>
 
-    <form asp-controller="Auth" asp-action="Register" method="post">
-        <input type="text" placeholder="" asp-for="Login" />
+    <form class="auth-form" asp-controller="Auth" asp-action="Register" method="post">
+        <input type="text" placeholder="Логин" asp-for="Login" />
         <span asp-validation-for="Password"></span>
 
-        <input type="text" placeholder="" asp-for="Email" />
+        <input type="text" placeholder="Email" asp-for="Email" />
         <span asp-validation-for="Email"></span>
 
-        <input type="password" placeholder="" asp-for="Password" />
+        <input type="password" placeholder="Пароль" asp-for="Password" />
         <span asp-validation-for="Password"></span>
 
-        <button type="submit">Зарегистрироваться</button>
+        <button class="login-button" type="submit">Зарегистрироваться</button>
     </form>
+    <a href="@Url.Action("Login", "Auth")" class="register-link">Уже есть аккаунт?</a>
 </div>

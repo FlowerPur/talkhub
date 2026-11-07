@@ -2,14 +2,29 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="auth-card">
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" />
+}
 
-<h2 id="login-heading">Вход</h2>
-<form id="auth-form" class="auth-form">
-    <input id="login" name="login" type="text" placeholder="Логин или почта" />
-    <input id="password" name="password" type="password" placeholder="Пароль" />
-    <span id="error-message"></span>
-    <button id="login-button" class="login-button" type="submit">Войти</button>
-</form>
-<a href="#" id="register-link" class="register-link">Нет аккаунта?</a>
+<div class="feed-container">
+    <form class="feed-form">
+        <textarea class="feed-input" placeholder="О чем думаешь?" rows="3"></textarea>
+        <button class="feed-button" type="submit">Опубликовать</button>
+    </form>
+    <div class="post-card">
+        <div class="post-header">
+            <img src="[https://ui-avatars.com/api/?name=Ivan+Ivanov&background=007bff&color=fff](https://ui-avatars.com/api/?name=Ivan+Ivanov&background=007bff&color=fff)" alt="Аватар" class="post-avatar" />
+            <a href="#" class="post-author">Иван Иванов</a>
+            <span class="post-timestamp">2 часа назад</span>
+        </div>
+        <p class="post-text">
+            Здарова уебки! Это мой первый поооост!!!</p>
+        <div class="post-footer">
+            <button class="like-button">❤️ 12</button>
+            <button class="comments-button">💬 4</button>
+        </div>
+    </div>
+
+    <button class="load-more-button">Загрузить еще</button>
+
 </div>
