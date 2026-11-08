@@ -23,5 +23,6 @@
 
         <button class="login-button" type="submit">Зарегистрироваться</button>
     </form>
-    <a href="@Url.Action("Login", "Auth")" class="register-link">Уже есть аккаунт?</a>
+
+    <a class="register-link" asp-controller="Auth" asp-action="Login">Уже есть аккаунт?</a>
 </div>

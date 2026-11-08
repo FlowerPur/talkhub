@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+input {
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: #585858;
+    outline: none;
+    border: 1px solid #ffffff;
+}
+
+button {
+    padding-left: 15px;
+    border-radius: 30px;
+    background-color: #585858;
+    color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+}

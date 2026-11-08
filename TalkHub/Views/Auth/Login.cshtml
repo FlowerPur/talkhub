@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="~/css/login.css" />
 }
 
-<div class="auth-card">
-    <h2>Вход</h2>
+<form asp-controller="Auth" asp-action="Login" method="post">
+    <input type="text" placeholder="Login or email" asp-for="Login" />
+    <span asp-validation-for="Login"></span>
 
-    <form class="auth-form" asp-controller="Auth" asp-action="Login" method="post">
-        <input type="text" placeholder="Логин или почта" asp-for="Login" />
-        <span asp-validation-for="Login"></span>
+    <input type="password" placeholder="Password" asp-for="Password" />
+    <span asp-validation-for="Password"></span>
 
-        <input type="password" placeholder="Пароль" asp-for="Password" />
-        <span asp-validation-for="Password"></span>
+    <button type="submit">Log in</button>
+</form>
 
-        <button class="login-button" type="submit">Войти</button>
-    </form>
-    <a href="@Url.Action("Register", "Auth")" class="register-link">Нет аккаунта?</a>
-</div>
+<a asp-controller="Auth" asp-action="Register">No account?</a>
