@@ -4,20 +4,88 @@ body {
     color: #ffffff;
 }
 
-input {
-    padding-left: 15px;
-    border-radius: 30px;
-    background-color: #585858;
+button {
+    border-radius: 25px;
+    background-color: #646464;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
     outline: none;
-    border: 1px solid #ffffff;
+    border: 1px solid #909090;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+
+    transition: all 0.2s ease;
 }
 
-button {
-    padding-left: 15px;
-    border-radius: 30px;
-    background-color: #585858;
+button:hover {
+    background-color: #7e7e7e;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #555555;
+    border: 1px solid #878787;
+}
+
+.cta-button {
+    border-radius: 25px;
+    background-color: #818181;
     color: #ffffff;
-    outline: none;
-    border: 1px solid #ffffff;
+    font-size: 18px;
     font-weight: 600;
+    outline: none;
+    border: 1px solid #b9b9b9;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #a0a0a0;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+
+.cta-button:active {
+    background-color: #727272;
+    border: 1px solid #a9a9a9;
+}
+
+
+input {
+    padding-left: 20px;
+    border-radius: 25px;
+    background-color: #646464;
+    color: #ffffff;
+    font-weight: 600;
+    outline: none;
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+
+    transition: all 0.2s ease;
+}
+
+input:hover {
+    background-color: #7e7e7e;
+    border: 1px solid #c2c2c2;
+}
+
+input:focus {
+    background-color: #555555;
+    border: 1px solid #878787;
+}
+
+input::placeholder {
+    color: #adadad;
+    transition: all 0.2s ease;
+}
+
+input:hover::placeholder {
+    color: #c2c2c2;
+}
+
+input:focus::placeholder {
+    opacity: 0;
 }

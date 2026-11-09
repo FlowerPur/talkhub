@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/css/login.css" />
 }
 
+<span id="card-title">Login</span>
+
 <form asp-controller="Auth" asp-action="Login" method="post">
     <input type="text" placeholder="Login or email" asp-for="Login" />
     <span asp-validation-for="Login"></span>
@@ -15,7 +17,7 @@
     <input type="password" placeholder="Password" asp-for="Password" />
     <span asp-validation-for="Password"></span>
 
-    <button type="submit">Log in</button>
+    <button class="cta-button" type="submit">Log in</button>
 </form>
 
 <a asp-controller="Auth" asp-action="Register">No account?</a>
